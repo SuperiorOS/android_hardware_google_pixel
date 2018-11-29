@@ -9,7 +9,7 @@ PRODUCT_COPY_FILES += \
       hardware/google/pixel/mm/fstab.zram.50p:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram.50p \
       hardware/google/pixel/mm/fstab.zram.60p:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram.60p
 
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PACKAGES += \
     mm_logd
 endif
